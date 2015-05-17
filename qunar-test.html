@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.qunar.com/" />
+<title>qunar-test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">qunar-test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=js_intersearchtype_roundtrip</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='fromCity'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@name='fromCity'])[2]</td>
+	<td>上海(SHA)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='toCity'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@name='toCity'])[2]</td>
+	<td>新加坡</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#fromDate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#fromDate</td>
+	<td>2015-08-05</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#toDate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#toDate</td>
+	<td>2015-08-12</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='submit'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#filter_showAllprice_yes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#filter_showAllprice_yes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=label.label-box</td>
+	<td>price</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>the lowest price is ${price}</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
